@@ -20,11 +20,15 @@ the machine learning model.
 
 ## Steps
 - Data preprocessing
+- Feature engineering & selection (color and texture-based features)
 - Model training
 - Evaluation
 
 ## Accuracy
 85%
 
+## Deployment
+The model is deployed using Streamlit, allowing users to upload leaf images and get predictions.
+
 ## Streamlit App
-[link here]
+https://predictiveproject1-x6cg8tzb5uwncmiqdz2nys.streamlit.app/
