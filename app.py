@@ -1,18 +1,29 @@
-%%writefile app.py
-
 import streamlit as st
 import cv2
 import numpy as np
 import joblib
 from skimage import feature
+import gdown
+import os
 
 # Page config
 st.set_page_config(page_title="🌿 Plant Disease Predictor", page_icon="🌿", layout="wide")
 
-# Load models
+# Google Drive file ID (replace with YOUR file ID)
+FILE_ID = "1rE5H5oli7Pv0_eibxKmkUB49IBcFn9aE"  # ← PUT YOUR FILE ID HERE
+
 @st.cache_resource
 def load_models():
-    model = joblib.load("rf_model.pkl")
+    # Download model from Google Drive if not exists
+    model_path = "rf_model.pkl"
+    
+    if not os.path.exists(model_path):
+        with st.spinner("📥 Downloading model (first time only)..."):
+            url = f"https://drive.google.com/uc?id={FILE_ID}"
+            gdown.download(url, model_path, quiet=False)
+    
+    # Load all files
+    model = joblib.load(model_path)
     selector = joblib.load("selector.pkl")
     scaler = joblib.load("scaler.pkl")
     le = joblib.load("label_encoder.pkl")
