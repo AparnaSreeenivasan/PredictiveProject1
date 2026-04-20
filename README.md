@@ -23,6 +23,14 @@ the machine learning model.
 - Feature engineering & selection (color and texture-based features)
 - Model training
 - Evaluation
+- Visualizations
+ ## 1. Model Comparison (SVM vs KNN vs Random Forest)
+Grouped bar chart comparing Accuracy, F1-Score, and 5-Fold CV Accuracy for all three models
+## 2. Individual vs Combined Features
+Bar chart showing Random Forest accuracy using Color Histogram, LBP, Hu Moments, and Combined features separately
+## 3. Confusion Matrix
+Side-by-side confusion matrices for SVM, KNN, and Random Forest using a blue colormap
+
 
 ## Accuracy
 85%
