@@ -33,7 +33,7 @@ Side-by-side confusion matrices for SVM, KNN, and Random Forest using a blue col
 
 
 ## Accuracy
-85%
+Random Forest is the best model and it has the accuracy of 83.5%
 
 ## Deployment
 The model is deployed using Streamlit, allowing users to upload leaf images and get predictions.
