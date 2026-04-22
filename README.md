@@ -1,5 +1,5 @@
 # PredictiveProject1
-Kerala Flower &amp; Plant Disease Classification Using Color and Texture Features
+Plant Disease Classification Using Machine Learning
 # Plant Disease Classification
 
 ## Problem Statement
