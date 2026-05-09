@@ -86,7 +86,7 @@ Models used:
 ## 6️⃣ Visualizations
 - Model Comparison (SVM vs KNN vs Random Forest)
 - Feature Comparison (Individual vs Combined features)
-- Confusion Matrix for all models  
+- Confusion Matrix for all models 
 
 ---
 
