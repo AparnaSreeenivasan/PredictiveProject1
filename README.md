@@ -2,9 +2,9 @@
 ## Plant Disease Classification Using Machine Learning  
 
 ### 👥 Team Members  
-- Aparna Sreenivasan  
-- Ayana Santhosh Khan 
-- Shiha Shajahan  
+- Aparna Sreenivasan  (253204)
+- Ayana Santhosh Khan (253217)
+- Shiha Shajahan  (253310)
 
 ### 📘 Course  
 Predictive Analytics  
