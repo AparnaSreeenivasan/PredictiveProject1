@@ -1,42 +1,117 @@
-# PredictiveProject1
-Plant Disease Classification Using Machine Learning
-# Plant Disease Classification
+# 🌿 PredictiveProject1  
+## Plant Disease Classification Using Machine Learning  
 
-## Problem Statement
-Plant diseases affect the crop quality and it also reduces agricultural productivity.
-Farmers often find it difficult to identify the diseases at early stage which causes problems in the agricultural sector. 
-This project aims to build a machine learning model that can be used to detect the plant diseases from leaf images and it helps to classify them as healthy or diseased.
+### 👥 Team Members  
+- Aparna Sreenivasan  
+- Ayana Santhosh Khan 
+- Shiha Shajahan  
 
-## Dataset
-In this project the dataset used is PlantVillage dataset.
-It contains images of plant leaves categorized into different classes such as:
-- Healthy
-- Bacterial Spot
-- Early Blight
-- Late Blight
+### 📘 Course  
+Predictive Analytics  
 
-The dataset consists of labeled images, which are used to train and test 
-the machine learning model.
+---
 
-## Steps
-- Data preprocessing
-- Feature engineering & selection (color and texture-based features)
-- Model training
-- Evaluation
-- Visualizations
- ## 1. Model Comparison (SVM vs KNN vs Random Forest)
-Grouped bar chart comparing Accuracy, F1-Score, and 5-Fold CV Accuracy for all three models
-## 2. Individual vs Combined Features
-Bar chart showing Random Forest accuracy using Color Histogram, LBP, Hu Moments, and Combined features separately
-## 3. Confusion Matrix
-Side-by-side confusion matrices for SVM, KNN, and Random Forest using a blue colormap
+# 🌱 Problem Statement & Motivation  
+Plant diseases significantly reduce crop quality and agricultural productivity. Farmers often struggle to identify diseases at an early stage, leading to major yield loss.
 
+This project aims to build a machine learning-based system that classifies plant leaf images as healthy or diseased, enabling early detection and better agricultural decision-making.
 
-## Accuracy
-Random Forest is the best model and it has the accuracy of 83.5%
+---
 
-## Deployment
-The model is deployed using Streamlit, allowing users to upload leaf images and get predictions.
+# 📊 Dataset Description  
+We used the PlantVillage dataset, a widely used dataset for plant disease classification.
 
-## Streamlit App
+### 📌 Dataset Details:
+- Source: PlantVillage Dataset  
+- Size: ~54,000 images  
+- Classes: 38 plant disease categories  
+- Type: Labeled leaf images  
+
+### 📌 Example Classes:
+- Healthy  
+- Bacterial Spot  
+- Early Blight  
+- Late Blight  
+- Leaf Mold  
+- Mosaic Virus  
+
+---
+
+# ⚙️ Methodology (Machine Learning Pipeline)
+
+## 1️⃣ Data Preprocessing
+- Image resizing (128 × 128)
+- Conversion from BGR to HSV color space
+- Standardization of image format
+
+---
+
+## 2️⃣ Feature Engineering
+Extracted handcrafted features:
+
+- Color Features → HSV Histogram  
+- Texture Features → Local Binary Pattern (LBP)  
+- Shape Features → Hu Moments  
+
+Total Features Extracted: 801 per image  
+
+---
+
+## 3️⃣ Feature Selection
+- Method: SelectKBest (Mutual Information)
+- Reduced features: 801 → 100
+
+Benefits:
+- Removes irrelevant features  
+- Improves accuracy  
+- Reduces computation time  
+
+---
+
+## 4️⃣ Model Training
+Models used:
+- Support Vector Machine (SVM)  
+- K-Nearest Neighbors (KNN)  
+- Random Forest Classifier  
+
+---
+
+## 5️⃣ Evaluation Metrics
+- Accuracy  
+- F1-Score  
+- 5-Fold Cross Validation  
+
+---
+
+## 6️⃣ Visualizations
+- Model Comparison (SVM vs KNN vs Random Forest)
+- Feature Comparison (Individual vs Combined features)
+- Confusion Matrix for all models  
+
+---
+
+# 📈 Results Summary
+
+| Model | Accuracy |
+|------|--------|
+| SVM | Lower |
+| KNN | Moderate |
+| Random Forest | ⭐ 83.5% (Best) |
+
+---
+
+# 🚀 Deployment
+The best-performing model is deployed using Streamlit.
+
+### Features:
+- Upload plant leaf image  
+- Real-time prediction  
+- Displays disease or healthy output  
+
+---
+
+# 🌐 Live Demo  
 https://predictiveproject1-x6cg8tzb5uwncmiqdz2nys.streamlit.app/
+
+---
+
