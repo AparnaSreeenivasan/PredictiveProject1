@@ -112,6 +112,8 @@ The best-performing model is deployed using Streamlit.
 
 # 🌐 Live Demo  
 https://predictiveproject1-x6cg8tzb5uwncmiqdz2nys.streamlit.app/
+<img width="2146" height="932" alt="image" src="https://github.com/user-attachments/assets/5876ca5c-00c3-4501-a0af-ad407f6736c6" />
+
 
 ---
 
